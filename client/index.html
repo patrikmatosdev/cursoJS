@@ -62,18 +62,12 @@
     <script>
         var n1 = new Negociacao(new Date(), 5, 700);
 
-        n1._quantidade = 1000;
-        n1._quantidade = 100000;
+        n1._quantidade = 100000000000;
 
-        console.log(n1.quantidade);
-        console.log(n1.valor);
+        console.log(n1.quantidade + ' <= QTD');
+        console.log(n1.valor + ' <= VALOR');
+        console.log(n1.volume + ' <= VOLUME'); 
         console.log(n1.data);
-        console.log(n1.volume); 
-
-        console.log(Object.isFrozen(n1));
-        Object.freeze(n1);
-        console.log(Object.isFrozen(n1));
-        n1._quantidade = 1000000000000;
     </script>
 </body> 
 </html>
