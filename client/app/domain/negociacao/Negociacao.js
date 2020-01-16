@@ -1,5 +1,4 @@
 class Negociacao {
-
   constructor(data, quantidade, valor) {
 
     this.data = data;
@@ -7,4 +6,9 @@ class Negociacao {
     this.valor = valor;
 
   }
+
+  obtemVolume() {
+    return this.quantidade * this.valor;
+  }
+
 }

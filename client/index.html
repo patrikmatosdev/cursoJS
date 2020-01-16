@@ -61,7 +61,8 @@
     <script src="app/domain/negociacao/Negociacao.js"></script>
     <script>
         var n1 = new Negociacao(new Date(),5, 700);
-        console.log(n1);
+        var volume = n1.quantidade * n1.valor ;
+        console.log(volume);
         
     </script>
 </body> 
